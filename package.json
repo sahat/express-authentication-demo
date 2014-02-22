@@ -1,0 +1,18 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "jade": "*",
+    "passport": "~0.2.0",
+    "passport-local": "~0.1.6",
+    "nodemailer": "~0.6.0",
+    "bcrypt": "~0.7.7",
+    "mongoose": "~3.8.7",
+    "express-flash": "0.0.2"
+  }
+}

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  if (messages.errors)
+    .alert.alert-danger
+      for error in messages.errors
+        div= error.msg
+  form(role='form', method='POST')
+    legend Signup
+    .form-group
+      label(for='username') Username
+      input.form-control(type='text', name='username', placeholder='Username', autofocus)
+    .form-group
+      label(for='password') Password
+      input.form-control(type='password', name='password', placeholder='Password')
+    .form-group
+      label(for='confirm') Confirm Password
+      input.form-control(type='password', name='confirm', placeholder='Confirm Password')
+    button.btn.btn-primary(type='submit') Signup
